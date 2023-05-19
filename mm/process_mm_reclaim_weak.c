@@ -1,1 +1,6 @@
-../../../vendor/oplus/kernel/oplus_performance/process_reclaim/process_mm_reclaim_weak.c
+#include <linux/process_mm_reclaim.h>
+
+int __weak create_process_reclaim_enable_proc(struct proc_dir_entry *parent)
+{
+	return 0;
+}
